@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/offlinedatabaseJS.js" ></script>
+        <style>
+            body { font-family:Verdana, Geneva, sans-serif; font-size:11px; }
+        </style>
+    </head>
+    <body onload="onInit()">
+        <ul id="procurar" style="color:red; cursor:pointer;"></ul>
+        <h3>Dados:</h3>
+        <ul  id="itemData" style="cursor:pointer;">
+        </ul>
+        <h3>Detalhes:</h3>
+        <form name="itemForm">
+            <label for="id">Id:</label><input type="text" name="id" id="id" size=2 />
+            <label for="nome">Nome:</label><input type="text" name="nome" id="nome" size=10 />
+            <label for="idade">Idade:</label><input type="text" name="idade" id="idade" size=3 /> <br>
+            <br>
+            <input type="button" name="create" value="Create" onclick="onCreate()" />
+            <input type="button" name="update" value="Update" onclick="onUpdate()" />
+            <input type="button" name="delete" value="Delete" onclick="onDelete()" />
+            <input type="button" name="procurar" value="procurar" onclick="selectUser()" />
+        </form>
+        <h4>Status:</h4>
+        <div id="status"></div>
+   </body>
+</html>
